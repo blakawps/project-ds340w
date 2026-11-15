@@ -1,0 +1,47 @@
+{
+  "train_rows": 3805,
+  "test_rows": 1088,
+  "input_features_raw": 14,
+  "input_features_encoded": 15,
+  "positive_cases_train": 241,
+  "positive_cases_test": 69,
+  "split_source": "existing split files",
+  "validation_unseen_opened": false,
+  "preprocessing_fitted_on": "training split only",
+  "early_stopping": "internal 15% holdout within training split only",
+  "evaluation_threshold": 0.5,
+  "neural_training": {
+    "PyTorch MLP": {
+      "best_epoch": 6,
+      "epochs_run": 18,
+      "best_internal_tune_loss": 0.2133394032716751,
+      "inner_train_rows": 3234,
+      "inner_tune_rows": 571,
+      "class_weighting": false,
+      "positive_class_weight": 1.0,
+      "dropout": 0.0
+    },
+    "PyTorch MLP Weighted": {
+      "best_epoch": 3,
+      "epochs_run": 15,
+      "best_internal_tune_loss": 1.076440453529358,
+      "inner_train_rows": 3234,
+      "inner_tune_rows": 571,
+      "class_weighting": true,
+      "positive_class_weight": 14.775609970092773,
+      "dropout": 0.0
+    },
+    "PyTorch MLP Weighted + Dropout": {
+      "best_epoch": 3,
+      "epochs_run": 15,
+      "best_internal_tune_loss": 1.0755668878555298,
+      "inner_train_rows": 3234,
+      "inner_tune_rows": 571,
+      "class_weighting": true,
+      "positive_class_weight": 14.775609970092773,
+      "dropout": 0.25
+    }
+  },
+  "shap_lime_compared_models": 8,
+  "notes": "SHAP and LIME explanations are approximate and are not causal or clinical evidence."
+}

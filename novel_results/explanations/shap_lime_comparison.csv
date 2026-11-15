@@ -1,0 +1,9 @@
+model,top_5_feature_overlap,top_5_overlap_fraction,shared_features,number_of_cases_explained
+Logistic Regression,2,0.4,glucose; hypertensive,3
+KNN,2,0.4,glucose; hypertensive,3
+SVM,3,0.6,diastolic_bp; glucose; hypertensive,3
+Decision Tree,5,1.0,age; glucose; height; weight; hypertensive,3
+Random Forest,4,0.8,diastolic_bp; glucose; weight; hypertensive,3
+PyTorch MLP,2,0.4,glucose; hypertensive,3
+PyTorch MLP Weighted,3,0.6,diastolic_bp; glucose; hypertensive,3
+PyTorch MLP Weighted + Dropout,3,0.6,diastolic_bp; glucose; hypertensive,3
